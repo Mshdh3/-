@@ -4,9 +4,6 @@ import requests
 from datetime import datetime, timedelta
 from config import token
 
-bot = telebot.TeleBot(token)
-
-
 class Pokemon:
     pokemons = {}
 
@@ -179,4 +176,5 @@ def fight(message):
 if __name__ == "__main__":
     print("Бот запущен... ✅")
     bot.infinity_polling()
+
 
